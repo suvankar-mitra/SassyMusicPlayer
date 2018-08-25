@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/midnight</color>
+    <color name="colorPrimaryDark">@color/midnight</color>
+    <color name="colorAccent">@color/orange_800</color>
+
+    <color name="white">#ecf0f1</color>
+    <color name="midnight">#212121</color>
+    <color name="gray_800">#424242</color>
+    <color name="blue_gray_400">#004D40</color>
+    <color name="red_100">#ffcdd2</color>
+    <color name="orange_900">#E65100</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_100">#F5F5F5</color>
+</resources>

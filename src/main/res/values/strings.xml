@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sassy Music Player</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="special_char_for_division">SPECIAL_CHAR_ALL_SONGS_DIVIDER</string>
+    <string name="action_settings">Settings</string>
+</resources>

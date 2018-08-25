@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_margin">16dp</dimen>
+    <dimen name="elevate_normal">10dp</dimen>
+    <dimen name="player_album_margin_LR">70dp</dimen>
+    <dimen name="player_album_title_margin">30dp</dimen>
+</resources>

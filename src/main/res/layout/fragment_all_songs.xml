@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AllSongsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/all_songs_recycler_view"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/all_songs_topbar"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="@dimen/elevate_normal"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ALL TRACKS"
+                android:layout_marginStart="@dimen/app_margin"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/orange_800"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search_black_24dp"
+            android:tint="@color/orange_800"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shuffle_black_24dp"
+            android:tint="@color/orange_800"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/all_songs_sort"
+            android:src="@drawable/sort_ascending"
+            android:tint="@color/orange_800"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        app:rfs_handleColor="@color/orange_900"
+        android:layout_alignTop="@+id/all_songs_recycler_view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Tracks"
+        android:textAllCaps="true"
+        android:id="@+id/all_songs_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/app_margin"
+        android:background="@drawable/capsule"
+        android:textColor="@android:color/white"
+        android:elevation="@dimen/elevate_normal"
+        android:fontFamily="@font/montserrat_regular"/>
+
+</RelativeLayout>
